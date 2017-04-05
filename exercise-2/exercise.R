@@ -4,11 +4,12 @@
 # "The difference in lengths is N"
 compareLength <- function(vec1, vec2){
     n <- (length(vec1) - length(vec2))
-    return(paste("The difference in lengths is", n))
+    return(paste("The difference in lengths is", abs(n)))
 }
 
 # Pass two vectors of different length to your `CompareLength` function
-cl <- compareLength(c(1, 2, 3, 4, 5), c(1, 2, 3))
+c1 <- compareLength(c(1, 2, 3, 4, 5), c(1, 2, 3))
+c2 <- compareLength((1:10), (1:30))
 
 # Write a function `DescribeDifference` that will return one of the following statements:
 # "Your first vector is longer by N elements"
